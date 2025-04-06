@@ -1,2 +1,2 @@
 # personal-website
-Personal portfolio website
+Personal portfolio website. WIP
