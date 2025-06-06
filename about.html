@@ -1,37 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AJ's Website</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <div class="header">
-            <header>AJ's Website</header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+<head>
+    <title>About - AJ's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom accent color */
+        .bg-accent {
+            background-color: #e9f5ff;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- Bootstrap Navbar (consistent with other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">AJ's Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <div class ="main">
-            <h1>About</h1>
-            <p>This website is my personal developer portfolio. Here you will find my dev projects and ways to reach me. Thanks for stopping by!</p>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <div class="bg-accent p-5 rounded-3 mb-5 text-center">
+            <h1 class="display-4">About Me</h1>
+            <p class="lead">This website is my personal developer portfolio.</p>
         </div>
-        <div class="footer">
-            <footer>
-                <span>Copyright 2025</span>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact Me</li>
-                    </ul>
-                </nav>
-            </footer>
+
+        <!-- About Content -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-4 text-center">
+                <!-- Placeholder for profile image - replace with your actual image -->
+                <img src="images/portrait.jpg" alt="Profile Picture" class="profile-img rounded-circle mb-3">
+                <h3>AJ Lesure</h3>
+                <p class="text-muted">Developer</p>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Welcome to My Portfolio</h2>
+                        <p class="card-text">Here you will find my dev projects and ways to reach me. Thanks for stopping by!</p>
+                        <p>I'm passionate about building web applications and solving problems through code. This portfolio showcases my journey and skills as a developer.</p>
+                        
+                        <!-- Skills Section -->
+                        <h4 class="mt-4">My Skills</h4>
+                        <div class="row mt-3">
+                            <div class="col-sm-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">HTML/CSS</li>
+                                    <li class="list-group-item">Bootstrap</li>
+                                    <li class="list-group-item">JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Web Development</li>
+                                    <li class="list-group-item">Problem Solving</li>
+                                    <li class="list-group-item">UI Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </main>
+
+    <!-- Footer (consistent with other pages) -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <span class="text-muted">Copyright 2025</span>
+            <ul class="list-inline mt-2">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="projects.html">Projects</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

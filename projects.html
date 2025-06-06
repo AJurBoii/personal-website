@@ -1,48 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AJ's Website</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <div class="header">
-            <header>AJ's Website</header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a>Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+<head>
+    <title>My Projects - AJ's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .project-card {
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .tech-badge {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .hero-projects {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Consistent Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">AJ's Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-        <div class ="main">
-            <h1>My Projects</h1>
-            <p>Here you will find all of my projects, both in progress and finished. Unfinished projects will link to their GitHub page. Refer to the readme for info on previewing the unfinished project.</p>
-        </div>
-        <div class="projects-container">
-            <div class="journal">
-                <h2>Journaling App</h2>
-                <p>This app allows users to write journal entries and track their mood. Journaling is a healthy coping mechanism for mental illness that encourages problem-solving and holistic thinking.</p>
-            </div>
-            <div class="image-finder">
-                <h2>Image Search App</h2>
-                <p>This mobile (iOS) app accesses users' image gallery and allows them to set tags on their images for easy searching later. No longer will you need to scroll through your gallery for minutes while searching for the perfect reaction image during your conversations.</p>
             </div>
         </div>
-        <div class="footer">
-            <footer>
-                <span>Copyright 2025</span>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact Me</li>
-                    </ul>
-                </nav>
-            </footer>
-        </div>
-    </body>
+    </nav>
 
+    <!-- Projects Header -->
+    <div class="hero-projects rounded-3">
+        <div class="container text-center py-4">
+            <h1 class="display-4">My Projects</h1>
+            <p class="lead">Here you will find all of my projects, both in progress and finished</p>
+        </div>
+    </div>
+
+    <!-- Projects Container -->
+    <main class="container mb-5">
+        <div class="alert alert-info mb-4">
+            <strong>Note:</strong> Unfinished projects will link to their GitHub page. Refer to the readme for info on previewing the unfinished project.
+        </div>
+
+        <div class="row g-4">
+            <!-- Journaling App Card -->
+            <div class="col-md-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Journaling App</h2>
+                        <p class="card-text">This app allows users to write journal entries and track their mood. Journaling is a healthy coping mechanism for mental illness that encourages problem-solving and holistic thinking.</p>
+                        
+                        <div class="mb-3">
+                            <span class="badge bg-primary tech-badge">JavaScript</span>
+                            <span class="badge bg-success tech-badge">React</span>
+                            <span class="badge bg-info tech-badge">Node.js</span>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-block">
+                            <!-- <a href="#" class="btn btn-primary">Live Demo</a> -->
+                            <a href="#" class="btn btn-outline-secondary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        In Progress - Estimated completion: August 2025
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Finder App Card -->
+            <div class="col-md-6">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Image Search App</h2>
+                        <p class="card-text">This mobile (iOS) app accesses users' image gallery and allows them to set tags on their images for easy searching later. No longer will you need to scroll through your gallery for minutes while searching for the perfect reaction image during your conversations.</p>
+                        
+                        <div class="mb-3">
+                            <span class="badge bg-primary tech-badge">Swift</span>
+                            <span class="badge bg-danger tech-badge">iOS</span>
+                            <span class="badge bg-warning text-dark tech-badge">Core Data</span>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-block">
+                            <!-- <a href="#" class="btn btn-primary">App Store</a> -->
+                            <a href="#" class="btn btn-outline-secondary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        In Progress - Estimated completion: November 2025
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+        </div>
+    </main>
+
+    <!-- Consistent Footer -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <span class="text-muted">Copyright 2025</span>
+            <ul class="list-inline mt-2">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="projects.html">Projects</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
