@@ -58,7 +58,6 @@
         <!-- About Content -->
         <div class="row align-items-center mb-5">
             <div class="col-md-4 text-center">
-                <!-- Placeholder for profile image - replace with your actual image -->
                 <img src="images/portrait.jpg" alt="Profile Picture" class="profile-img rounded-circle mb-3">
                 <h3>AJ Lesure</h3>
                 <p class="text-muted">Developer</p>
@@ -71,8 +70,150 @@
                         <p>I'm passionate about building web applications and solving problems through code. This portfolio showcases my journey and skills as a developer.</p>
                         
                         <!-- Skills Section -->
-                        <h4 class="mt-4">My Skills</h4>
-                        <div class="row mt-3">
+                        <h3 class="mt-4 mb-4">My Skills</h3>
+                        <div class="d-block d-lg-none">
+                            <div class="accordion" id="accordionSkills">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Backend Languages
+                                        </button>
+                                    </h4>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionSkills">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Python (Flask)</li>
+                                                <li class="list-group-item">Java (Spring Boot)</li>
+                                                <li class="list-group-item">C# (.NET)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            Cloud & Databases
+                                        </button>
+                                    </h4>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionSkills">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">AWS (ECS, DynamoDB)</li>
+                                                <li class="list-group-item">SQL</li>
+                                                <li class="list-group-item">NoSQL</li>
+                                                <li class="list-group-item">Firebase</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            DevOps
+                                        </button>
+                                    </h4>
+                                    <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionSkills">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">CI/CD</li>
+                                                <li class="list-group-item">Azure DevOps</li>
+                                                <li class="list-group-item">Docker</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            Development Practices
+                                        </button>
+                                    </h4>
+                                    <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionSkills">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Agile</li>
+                                                <li class="list-group-item">Git & GitHub</li>
+                                                <li class="list-group-item">Unit Testing</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                            Web Development
+                                        </button>
+                                    </h4>
+                                    <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionSkills">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">HTML/CSS</li>
+                                                <li class="list-group-item">JavaScript</li>
+                                                <li class="list-group-item">React</li>
+                                                <li class="list-group-item">Bootstrap</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-lg-block">
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center mt-2">Backend Languages</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Python (Flask)</li>
+                                                <li class="list-group-item">Java (Spring Boot)</li>
+                                                <li class="list-group-item">C# (.NET)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">Cloud & Database</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">AWS (ECS, DynamoDB)</li>
+                                                <li class="list-group-item">SQL</li>
+                                                <li class="list-group-item">NoSQL</li>
+                                                <li class="list-group-item">Firebase</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-center">DevOps</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">CI/CD</li>
+                                                <li class="list-group-item">Azure DevOps</li>
+                                                <li class="list-group-item">Docker</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div clas="card-body">
+                                            <h4 class="card-title text-center">Web Development</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">HTML/CSS</li>
+                                                <li class="list-group-item">JavaScript</li>
+                                                <li class="list-group-item">React</li>
+                                                <li class="list-group-item">Bootstrap</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row mt-3">
                             <div class="col-sm-6">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">HTML/CSS</li>
@@ -87,7 +228,7 @@
                                     <li class="list-group-item">UI Design</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
